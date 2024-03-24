@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="folha de estilo">
 
     <link rel="stylesheet" href="./styles/style.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         <div class="container">
             <img class="hero__logo" src="./images/logo.png" alt="logo">
             <p class="hero__text">
-                O dia mais aguardado do ano está chegando!
+                O dia mais aguardado do ano está chegando! <span id="contador"></span>
             </p>
 
             <div class="infoBar">
@@ -45,15 +46,16 @@
         </div>
     </header>
 
-    <section class="event event--comoChegar">
-        <div class="container">
+    <section class="event event--janeiro">
+        <div class="container" data-aos="fade-right">
             <div class="event__details">
-                <h2 class="event__details__title">Como chegar</h2>
+                <h2 class="event__details__title">janeiro</h2>
 
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et veritatis, quas eaque ipsam facere ea
-                    neque ullam voluptates accusantium esse sapiente excepturi voluptatum quod delectus porro dolor
-                    harum saepe debitis.
+                <p class="event__details__description">
+                    Janeiro é o mês em que plantamos as sementes para colher durante todo o ano. Aproveite Janeiro para
+                    definir suas intenções e trabalhar para torná-las realidade. É o convite da vida para recomeçar e
+                    reimaginar. Que seus 31 dias sejam suficientes para distribuir as incontáveis bênçãos que você nos
+                    traz. Seja bem-vindo
                 </p>
             </div>
 
@@ -62,15 +64,18 @@
         </div>
     </section>
 
-    <section class="event event--comoChegar">
-        <div class="container">
+    <section class="event event--fevereiro event--image-left">
+        <div class="container" data-aos="fade-left">
             <div class="event__details">
-                <h2 class="event__details__title">Como chegar</h2>
+                <h2 class="event__details__title">Fevereiro</h2>
 
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea eveniet totam, repudiandae aliquid
-                    deleniti quod. Dolorum quod repellendus laudantium sapiente, explicabo minima. Modi asperiores
-                    excepturi, expedita similique quidem nam quam!
+                <p class="event__details__description">
+                    O mês de fevereiro é o segundo mês do ano nos calendários gregoriano e juliano. Ele é também o mês
+                    mais curto, com duração de 28 dias, ou 29, em caso de anos bissextos. A origem da palavra
+                    “fevereiro” remonta ao latim “februarius”, uma homenagem ao Deus da mitologia romana conhecido como
+                    Febro ou Februus. Este mês é marcado por diversos fatos históricos notáveis, como avanços em missões
+                    espaciais, descobertas científicas, atos de golpes de estado e celebrações como o Carnaval e o Dia
+                    do Frevo. Além disso, a Quarta-Feira de Cinzas marca o início do período de Quaresma.
                 </p>
             </div>
 
@@ -79,15 +84,15 @@
         </div>
     </section>
 
-    <section class="event event--comoChegar">
-        <div class="container">
+    <section class="event event--marco">
+        <div class="container" data-aos="fade-right">
             <div class="event__details">
-                <h2 class="event__details__title">Como chegar</h2>
+                <h2 class="event__details__title">Março</h2>
 
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quos accusamus molestiae
-                    dignissimos. Maiores expedita, asperiores dignissimos sequi repudiandae, itaque quisquam facilis
-                    tempore quas ipsum sit corporis culpa omnis quo!
+                <p class="event__details__description">
+                    Março, o terceiro mês do ano no calendário gregoriano, marca um período de transição e renovação.
+                    Com seus 31 dias, situa-se entre fevereiro e abril, simbolizando a passagem do inverno para a
+                    primavera no hemisfério norte.
                 </p>
             </div>
 
@@ -96,15 +101,18 @@
         </div>
     </section>
 
-    <section class="event event--comoChegar">
-        <div class="container">
+    <section class="event event--abril event--image-left">
+        <div class="container" data-aos="fade-left">
             <div class="event__details">
-                <h2 class="event__details__title">Como chegar</h2>
+                <h2 class="event__details__title">Abril</h2>
 
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quos accusamus molestiae
-                    dignissimos. Maiores expedita, asperiores dignissimos sequi repudiandae, itaque quisquam facilis
-                    tempore quas ipsum sit corporis culpa omnis quo!
+                <p class="event__details__description">
+                    O mês de abril traz consigo várias datas comemorativas e eventos importantes. Aqui estão algumas
+                    delas:
+
+                    Dia da Mentira (1º de abril): Uma data em que algumas pessoas fazem brincadeiras com os amigos.
+                    Dia Mundial de Conscientização do Autismo (2 de abril): Criado para combater o preconceito e
+                    discriminação em relação ao Transtorno do Espectro Autista (TEA).
                 </p>
             </div>
 
@@ -113,12 +121,12 @@
         </div>
     </section>
 
-    <section class="event event--comoChegar">
-        <div class="container">
+    <section class="event event--maio">
+        <div class="container" data-aos="fade-right">
             <div id="map" class="event__details">
-                <h2 class="event__details__title">Como chegar</h2>
+                <h2 class="event__details__title">Maio</h2>
 
-                <iframe class="event__details__description event__details__description__maps"
+                <iframe class=" event__details__maps"
                     src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d416.0541745800246!2d-48.21822610631995!3d-7.218393306669226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x92d90dde5d8c4ffb%3A0x4a30e815e64dc4fc!2zQXJhZ3Vhw61uYSwgVE8!3m2!1d-7.191563299999999!2d-48.2094801!4m5!1s0x92d90f0cf73653cf%3A0x1ef6b27ca29ece02!2sComplexo%20Poliesportivo%20Pedro%20Quaresma%2C%20Av.%20Via%20Lago%2C%20Ch.%20Xixebal%2C%20Qd.%2002%2C%20s%2Fn%20-%20setor%20Mans%C3%B5es%20do%20Lago%2C%20Aragua%C3%ADna%20-%20TO!3m2!1d-7.2182581!2d-48.218100299999996!5e0!3m2!1spt-BR!2sbr!4v1711044823230!5m2!1spt-BR!2sbr"
                     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
@@ -129,6 +137,7 @@
         </div>
     </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/script.js"></script>
 </body>
 
